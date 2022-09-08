@@ -3,13 +3,225 @@
   <meta charset="UTF-8">
   <title>Page Title</title>
   
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
   <body>
+ 
+    <div class="navcontainer"> 
+      <!--contains logo, nav pages and phrase-->
 
-    <h1>I am the solution to HW1!</h1>
+      <div class="logo">
+        <img class="logo-thumbnail" src="assets/img/logo-01.svg" alt="Logo icon"/>
+      </div>
 
-    <p>
-        And I can link to <a href="./otherpage.html">other pages.</a>
-    </p>
+      <div class="nav">
+        <div class="pages">
+          <p class="nav-items">PRODUCTS</p>
+          <p class="nav-items">CART</p>
+        </div>
+
+        <div>
+          <hr/>
+        </div>
+        
+        <div class="phrase">
+          <p>
+              Our hand-made cinnamon rolls
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="gallery">
+        <div class="item-row">
+            <div class="item">
+                <img class="item-img" src="assets/img/original-cinnamon-roll.jpg" alt="original cinnamon roll picture">
+                <div class="item-desc">
+                  <div class="item-name">
+                    <p>Original cinnamon roll</p>
+                  </div>
+                  <div class="item-glazing">
+                    <label for="glaze-original">Glazing:</label>
+                    <select name="glaze-original" id="glaze-original">
+                      <option value="keeporiginal">Keep original</option>
+                      <option value="sugarmilk">Sugar milk</option>
+                      <option value="vanillamilk">Vanilla milk</option>
+                      <option value="doublechocolate">Double chocolate</option>
+                    </select>
+                  </div>
+                  <div class="item-pack-size">
+                    <p class="pack-p">Pack size</p>
+                    <div class="pack">
+                      <button type="button" class="pack-size p1">1</button>
+                      <button type="button" class="pack-size p3">3</button>
+                      <button type="button" class="pack-size p6">6</button>
+                      <button type="button" class="pack-size p12">12</button>
+                    </div>
+                  </div>
+                  <div class="item-final">
+                    <p class="item-cost">$ 2.49</p>
+                    <button class="item-cart" type="button" onclick="location.href='#'">Add to Cart</button>
+                  </div>
+                </div>
+            </div>
+            <div class="item">
+              <img class="item-img" src="assets/img/apple-cinnamon-roll.jpg" alt="apple cinnamon roll picture">
+              <div class="item-desc">
+                <div class="item-name">
+                  <p>Apple cinnamon roll</p>
+                </div>
+                <div class="item-glazing">
+                  <label for="glaze-apple">Glazing:</label>
+                  <select name="glaze-apple" id="glaze-apple">
+                    <option value="keeporiginal">Keep original</option>
+                    <option value="sugarmilk">Sugar milk</option>
+                    <option value="vanillamilk">Vanilla milk</option>
+                    <option value="doublechocolate">Double chocolate</option>
+                  </select>
+                </div>
+                <div class="item-pack-size">
+                  <p class="pack-p">Pack size</p>
+                  <div class="pack">
+                    <button type="button" class="pack-size p1">1</button>
+                    <button type="button" class="pack-size p3">3</button>
+                    <button type="button" class="pack-size p6">6</button>
+                    <button type="button" class="pack-size p12">12</button>
+                  </div>
+                </div>
+                <div class="item-final">
+                  <p class="item-cost">$ 3.49</p>
+                  <button class="item-cart" type="button" onclick="location.href='#'">Add to Cart</button>
+                </div>
+              </div>
+          </div>
+          <div class="item">
+            <img class="item-img" src="assets/img/raisin-cinnamon-roll.jpg" alt="raisin cinnamon roll picture">
+            <div class="item-desc">
+              <div class="item-name">
+                <p>Raisin cinnamon roll</p>
+              </div>
+              <div class="item-glazing">
+                <label for="glaze-raisin">Glazing:</label>
+                <select name="glaze-raisin" id="glaze-raisin">
+                  <option value="keeporiginal">Keep original</option>
+                  <option value="sugarmilk">Sugar milk</option>
+                  <option value="vanillamilk">Vanilla milk</option>
+                  <option value="doublechocolate">Double chocolate</option>
+                </select>
+              </div>
+              <div class="item-pack-size">
+                <p class="pack-p">Pack size</p>
+                <div class="pack">
+                  <button type="button" class="pack-size p1">1</button>
+                  <button type="button" class="pack-size p3">3</button>
+                  <button type="button" class="pack-size p6">6</button>
+                  <button type="button" class="pack-size p12">12</button>
+                </div>
+              </div>
+              <div class="item-final">
+                <p class="item-cost">$ 2.99</p>
+                <button class="item-cart" type="button" onclick="location.href='#'">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+      </div> 
+      <div class="item-row">
+        <div class="item">
+          <img class="item-img" src="assets/img/walnut-cinnamon-roll.jpg" alt="walnut cinnamon roll picture">
+          <div class="item-desc">
+            <div class="item-name">
+              <p>Walnut cinnamon roll</p>
+            </div>
+            <div class="item-glazing">
+              <label for="glaze-walnut">Glazing:</label>
+              <select name="glaze-walnut" id="glaze-walnut">
+                <option value="keeporiginal">Keep original</option>
+                <option value="sugarmilk">Sugar milk</option>
+                <option value="vanillamilk">Vanilla milk</option>
+                <option value="doublechocolate">Double chocolate</option>
+              </select>
+            </div>
+            <div class="item-pack-size">
+              <p class="pack-p">Pack size</p>
+              <div class="pack">
+                <button type="button" class="pack-size p1">1</button>
+                <button type="button" class="pack-size p3">3</button>
+                <button type="button" class="pack-size p6">6</button>
+                <button type="button" class="pack-size p12">12</button>
+              </div>
+            </div>
+            <div class="item-final">
+              <p class="item-cost">$ 3.49</p>
+              <button class="item-cart" type="button" onclick="location.href='#'">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="item-img" src="assets/img/double-chocolate-cinnamon-roll.jpg" alt="double chocolate cinnamon roll picture">
+          <div class="item-desc">
+            <div class="item-name">
+              <p>Double-chocolate cinnamon roll</p>
+            </div>
+            <div class="item-glazing">
+              <label for="glaze-double-chocolate">Glazing:</label>
+              <select name="glaze-double-chocolate" id="glaze-double-chocolate">
+                <option value="keeporiginal">Keep original</option>
+                <option value="sugarmilk">Sugar milk</option>
+                <option value="vanillamilk">Vanilla milk</option>
+                <option value="doublechocolate">Double chocolate</option>
+              </select>
+            </div>
+            <div class="item-pack-size">
+              <p class="pack-p">Pack size</p>
+              <div class="pack">
+                <button type="button" class="pack-size p1">1</button>
+                <button type="button" class="pack-size p3">3</button>
+                <button type="button" class="pack-size p6">6</button>
+                <button type="button" class="pack-size p12">12</button>
+              </div>
+            </div>
+            <div class="item-final">
+              <p class="item-cost">$ 3.99</p>
+              <button class="item-cart" type="button" onclick="location.href='#'">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="item-img" src="assets/img/strawberry-cinnamon-roll.jpg" alt="strawberry cinnamon roll picture">
+          <div class="item-desc">
+            <div class="item-name">
+              <p>Strawberry cinnamon roll</p>
+            </div>
+            <div class="item-glazing">
+              <label for="glaze-strawberry">Glazing:</label>
+              <select name="glaze-strawberry" id="glaze-strawberry">
+                <option value="keeporiginal">Keep original</option>
+                <option value="sugarmilk">Sugar milk</option>
+                <option value="vanillamilk">Vanilla milk</option>
+                <option value="doublechocolate">Double chocolate</option>
+              </select>
+            </div>
+            <div class="item-pack-size">
+              <p class="pack-p">Pack size</p>
+              <div class="pack">
+                <button type="button" class="pack-size p1">1</button>
+                <button type="button" class="pack-size p3">3</button>
+                <button type="button" class="pack-size p6">6</button>
+                <button type="button" class="pack-size p12">12</button>
+              </div>
+            </div>
+            <div class="item-final">
+              <p class="item-cost">$ 3.99</p>
+              <button class="item-cart" type="button" onclick="location.href='#'">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
 
   </body>
 </html>
