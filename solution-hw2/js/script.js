@@ -137,7 +137,7 @@ function addToCart(idOfRollPrice){
     //all strings so convert to Int
     //https://stackoverflow.com/questions/1133770/how-to-convert-a-string-to-an-integer-in-javascript
     finalCost = ( parseFloat(costValue) + parseFloat(pr) ) * parseFloat(pa);
-    cost.innerHTML = '$ ' + finalCost;
+    cost.innerHTML = '$ ' + finalCost.toFixed(2);
 
     //add the roll with its configured glazing and packSize to a list that represents the cart items
     let cart = document.getElementById("cart-summary-items");
