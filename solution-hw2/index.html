@@ -3,9 +3,213 @@
   <meta charset="UTF-8">
   <title>Page Title</title>
   
-  <body>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
 
-    <h1>I am the solution to HW2!</h1>
+  <body>
+ 
+    <div class="navcontainer"> 
+      <!--contains logo, nav pages and phrase-->
+
+      <div class="logo">
+        <img class="logo-thumbnail" src="assets/img/logo-01.svg" alt="Logo icon"/>
+      </div>
+
+      <div class="nav">
+        <div class="pages">
+          <p class="nav-items">PRODUCTS</p>
+          <p class="nav-items">CART</p>
+        </div>
+
+
+        <div class="cart-summary">
+          <p class="cart-summary-items">0 items</p>
+          <p class="cart-summary-items">Total: $0.00</p>
+        </div>
+
+        <div class="popup" onclick="popUpSummary()">-
+          <span class="popuptext" id="popupSummary"><p>Added to cart:</p><p class="summaryOfRoll">afdhns<br/>jdhvds</p>
+          </span>
+        </div>
+
+        <div>
+          <hr/>
+        </div>
+        
+        <div class="phrase">
+          <p>
+              Our hand-made cinnamon rolls
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="gallery">
+        <div class="item-row">
+            <div class="item">
+                <img class="item-img" src="assets/img/original-cinnamon-roll.jpg" alt="original cinnamon roll picture">
+                <div class="item-desc">
+                  <div class="item-name">
+                    <p>Original cinnamon roll</p>
+                  </div>
+                  <div class="item-glazing">
+                    <label for="glaze-original">Glazing:</label>
+                    <select name="glaze-original" id="glaze-original" onchange="glazingChange(this)">
+                    </select>
+                  </div>
+                  <div class="item-pack-size">
+                    <p class="pack-p">Pack size</p>
+                    <div class="pack">
+                      <button type="button" class="pack-size p1" onclick="packSizeChange(this)">1</button>
+                      <button type="button" class="pack-size p3" onclick="packSizeChange(this)">3</button>
+                      <button type="button" class="pack-size p6" onclick="packSizeChange(this)">6</button>
+                      <button type="button" class="pack-size p12" onclick="packSizeChange(this)">12</button>
+                    </div>
+                  </div>
+                  <div class="item-final">
+                    <p class="item-cost" id="originalCinnamonRoll">$ 2.49</p>
+                    <button class="item-cart" type="button" onclick="addToCart('originalCinnamonRoll')">Add to Cart</button>
+                  </div>
+                </div>
+            </div>
+            <div class="item">
+              <img class="item-img" src="assets/img/apple-cinnamon-roll.jpg" alt="apple cinnamon roll picture">
+              <div class="item-desc">
+                <div class="item-name">
+                  <p>Apple cinnamon roll</p>
+                </div>
+                <div class="item-glazing">
+                  <label for="glaze-apple">Glazing:</label>
+                  <select name="glaze-apple" id="glaze-apple" onchange="glazingChange(this)">
+                  </select>
+                </div>
+                <div class="item-pack-size">
+                  <p class="pack-p">Pack size</p>
+                  <div class="pack">
+                    <button type="button" class="pack-size p1" onclick="packSizeChange(this)">1</button>
+                    <button type="button" class="pack-size p3" onclick="packSizeChange(this)">3</button>
+                    <button type="button" class="pack-size p6" onclick="packSizeChange(this)">6</button>
+                    <button type="button" class="pack-size p12" onclick="packSizeChange(this)">12</button>
+                  </div>
+                </div>
+                <div class="item-final">
+                  <p class="item-cost" id="appleCinnamonRoll">$ 3.49</p>
+                  <button class="item-cart" type="button" onclick="addToCart('appleCinnamonRoll')">Add to Cart</button>
+                </div>
+              </div>
+          </div>
+          <div class="item">
+            <img class="item-img" src="assets/img/raisin-cinnamon-roll.jpg" alt="raisin cinnamon roll picture">
+            <div class="item-desc">
+              <div class="item-name">
+                <p>Raisin cinnamon roll</p>
+              </div>
+              <div class="item-glazing">
+                <label for="glaze-raisin">Glazing:</label>
+                <select name="glaze-raisin" id="glaze-raisin" onchange="glazingChange(this)">
+                </select>
+              </div>
+              <div class="item-pack-size">
+                <p class="pack-p">Pack size</p>
+                <div class="pack">
+                  <button type="button" class="pack-size p1" onclick="packSizeChange(this)">1</button>
+                  <button type="button" class="pack-size p3" onclick="packSizeChange(this)">3</button>
+                  <button type="button" class="pack-size p6" onclick="packSizeChange(this)">6</button>
+                  <button type="button" class="pack-size p12" onclick="packSizeChange(this)">12</button>
+                </div>
+              </div>
+              <div class="item-final">
+                <p class="item-cost" id="raisinCinnamonRoll">$ 2.99</p>
+                <button class="item-cart" type="button" onclick="addToCart('appleCinnamonRoll')">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+      </div> 
+      <div class="item-row">
+        <div class="item">
+          <img class="item-img" src="assets/img/walnut-cinnamon-roll.jpg" alt="walnut cinnamon roll picture">
+          <div class="item-desc">
+            <div class="item-name">
+              <p>Walnut cinnamon roll</p>
+            </div>
+            <div class="item-glazing">
+              <label for="glaze-walnut">Glazing:</label>
+              <select name="glaze-walnut" id="glaze-walnut" onchange="glazingChange(this)">
+              </select>
+            </div>
+            <div class="item-pack-size">
+              <p class="pack-p">Pack size</p>
+              <div class="pack">
+                <button type="button" class="pack-size p1" onclick="packSizeChange(this)">1</button>
+                <button type="button" class="pack-size p3" onclick="packSizeChange(this)">3</button>
+                <button type="button" class="pack-size p6" onclick="packSizeChange(this)">6</button>
+                <button type="button" class="pack-size p12" onclick="packSizeChange(this)">12</button>
+              </div>
+            </div>
+            <div class="item-final">
+              <p class="item-cost" id="walnutCinnamonRoll">$ 3.49</p>
+              <button class="item-cart" type="button" onclick="addToCart('walnutCinnamonRoll')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="item-img" src="assets/img/double-chocolate-cinnamon-roll.jpg" alt="double chocolate cinnamon roll picture">
+          <div class="item-desc">
+            <div class="item-name">
+              <p>Double-chocolate cinnamon roll</p>
+            </div>
+            <div class="item-glazing">
+              <label for="glaze-double-chocolate">Glazing:</label>
+              <select name="glaze-double-chocolate" id="glaze-double-chocolate" onchange="glazingChange(this)">
+              </select>
+            </div>
+            <div class="item-pack-size">
+              <p class="pack-p">Pack size</p>
+              <div class="pack">
+                <button type="button" class="pack-size p1" onclick="packSizeChange(this)">1</button>
+                <button type="button" class="pack-size p3" onclick="packSizeChange(this)">3</button>
+                <button type="button" class="pack-size p6" onclick="packSizeChange(this)">6</button>
+                <button type="button" class="pack-size p12" onclick="packSizeChange(this)">12</button>
+              </div>
+            </div>
+            <div class="item-final">
+              <p class="item-cost" id="doubleChocolateCinnamonRoll">$ 3.99</p>
+              <button class="item-cart" type="button" onclick="addToCart('doubleChocolateCinnamonRoll')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="item-img" src="assets/img/strawberry-cinnamon-roll.jpg" alt="strawberry cinnamon roll picture">
+          <div class="item-desc">
+            <div class="item-name">
+              <p>Strawberry cinnamon roll</p>
+            </div>
+            <div class="item-glazing">
+              <label for="glaze-strawberry">Glazing:</label>
+              <select name="glaze-strawberry" id="glaze-strawberry" onchange="glazingChange(this)">
+              </select>
+            </div>
+            <div class="item-pack-size">
+              <p class="pack-p">Pack size</p>
+              <div class="pack">
+                <button type="button" class="pack-size p1" onclick="packSizeChange(this)">1</button>
+                <button type="button" class="pack-size p3" onclick="packSizeChange(this)">3</button>
+                <button type="button" class="pack-size p6" onclick="packSizeChange(this)">6</button>
+                <button type="button" class="pack-size p12" onclick="packSizeChange(this)">12</button>
+              </div>
+            </div>
+            <div class="item-final">
+              <p class="item-cost" id="strawberryCinnamonRoll">$ 3.99</p>
+              <button class="item-cart" type="button" onclick="addToCart('strawberryCinnamonRoll')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
 
   </body>
 </html>
