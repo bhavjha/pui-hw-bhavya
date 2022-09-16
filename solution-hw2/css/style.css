@@ -53,6 +53,7 @@ hr {
     text-align: right;
 }
 
+
 .phrase {
     font-size: 200%;
     padding: 20px 0px;
@@ -184,14 +185,6 @@ button {
     cursor: pointer;
 }
 
-/* .popup {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    cursor: pointer;
-    margin-right: 7%;
-  } */
-
 
 
 /* Popup container */
@@ -209,7 +202,7 @@ button {
     background-color: white;
     border-color: grey;
     border: 1px solid;
-    
+
     padding: 1px 0;
     text-align: left;
  

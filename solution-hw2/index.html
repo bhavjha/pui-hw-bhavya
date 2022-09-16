@@ -25,12 +25,12 @@
 
 
         <div class="cart-summary">
-          <p class="cart-summary-items">0 items</p>
-          <p class="cart-summary-items">Total: $0.00</p>
+          <p id="cart-summary-items" class="cart-summary-items">0 items</p>
+          <p id="cart-summary-items-total" class="cart-summary-items">Total: $0.00</p>
         </div>
 
-        <div class="popup" onclick="popUpSummary()">-
-          <span class="popuptext" id="popupSummary"><p>Added to cart:</p><p class="summaryOfRoll">afdhns<br/>jdhvds</p>
+        <div class="popup">
+          <span class="popuptext" id="popupSummary"><p>Added to cart:</p><p class="summaryOfRoll"></p>
           </span>
         </div>
 
@@ -123,7 +123,7 @@
               </div>
               <div class="item-final">
                 <p class="item-cost" id="raisinCinnamonRoll">$ 2.99</p>
-                <button class="item-cart" type="button" onclick="addToCart('appleCinnamonRoll')">Add to Cart</button>
+                <button class="item-cart" type="button" onclick="addToCart('raisinCinnamonRoll')">Add to Cart</button>
               </div>
             </div>
           </div>
